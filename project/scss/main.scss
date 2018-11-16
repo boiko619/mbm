@@ -1,0 +1,124 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+h1, h2, h3, h4, h5, h6, p, a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+   /* background-image: url("/images/bg/bg_body.png");
+    background-position: center;
+    background-size: cover;*/
+    background: #fcfffe;
+    position: relative;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+ ul, body {
+    padding: 0;
+    margin: 0; }
+
+
+
+#top{
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    width: 50px;
+    height: 50px;
+    background: #79897a;
+    border-radius: 5px;
+    transition: all 0.7s;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.75);
+    img{
+        width: 35px;
+        height: 25px;
+    }
+    opacity: 0;
+}
+input {
+    outline:none;
+}
+a {
+    outline:none;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+@import "about_main.scss";
+@import "vacancy.scss";
+@import "index.scss";
+.mousedown{
+    width: 100px;
+    height: 35px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: 2px 6px 23px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 6px 23px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 6px 23px 0px rgba(0,0,0,0.75);
+    transition: all 0.2s;
+}
+.mouseup {
+    width: 200px;
+    height: 40px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: 2px 6px 23px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 6px 23px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 6px 23px 0px rgba(0,0,0,0.75);
+    transition: all 0.2s;
+
+}
