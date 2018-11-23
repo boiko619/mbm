@@ -8,6 +8,7 @@
     "nav nav nav"
     "hea_about hea_about hea_about"
     "about_block about_block about_block"
+    "footer footer footer"
 
     ;
     grid-template-columns: minmax(10px, 1fr) minmax(10px, 1080px) minmax(10px, 1fr);
@@ -25,8 +26,9 @@
     "about_ul1"
     "about_block2"
     "about_ul2";
-
     padding: 0 20%;
+
+  
 
 }
 .about_title{
@@ -83,7 +85,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 .about_block2_button{
     width: 250px;

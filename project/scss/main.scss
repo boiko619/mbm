@@ -95,6 +95,13 @@ a {
 @import "about_main.scss";
 @import "vacancy.scss";
 @import "index.scss";
+@import "footer.scss";
+@import "partner.scss";
+
+@import "book.scss";
+@import "nav.scss";
+
+
 .mousedown{
     width: 100px;
     height: 35px;
@@ -106,7 +113,7 @@ a {
     -webkit-box-shadow: 2px 6px 23px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 2px 6px 23px 0px rgba(0,0,0,0.75);
     box-shadow: 2px 6px 23px 0px rgba(0,0,0,0.75);
-    transition: all 0.2s;
+    transition: all 0.3s;
 }
 .mouseup {
     width: 200px;
@@ -119,6 +126,7 @@ a {
     -webkit-box-shadow: 2px 6px 23px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 2px 6px 23px 0px rgba(0,0,0,0.75);
     box-shadow: 2px 6px 23px 0px rgba(0,0,0,0.75);
-    transition: all 0.2s;
+    transition: all 0.3s;
+    cursor: pointer;
 
 }

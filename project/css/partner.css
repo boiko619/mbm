@@ -1,0 +1,75 @@
+body {
+  height: 100%; }
+
+.body_parnter {
+  position: relative;
+  display: grid;
+  overflow: hidden;
+  grid-template-areas: "nav nav nav" "hea_part hea_part hea_part" "part_block part_block part_block" " . . ." " footer footer footer";
+  grid-template-columns: minmax(10px, 1fr) minmax(10px, 1080px) minmax(10px, 1fr);
+  grid-template-rows: 70px 1fr 1fr  1fr 245px;
+  -webkit-box-shadow: 0px 0px 54px 3px rgba(0, 0, 0, 0.56);
+  -moz-box-shadow: 0px 0px 54px 3px rgba(0, 0, 0, 0.56);
+  position: relative;
+  min-height: 100%; }
+  .body_parnter .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; }
+
+.hea_part {
+  grid-area: hea_part;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.part_block {
+  grid-area: part_block; }
+
+.part_grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.part_item {
+  width: 900px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 30px 0;
+  border: 1px solid black;
+  padding: 20px; }
+
+.part_item_logo {
+  padding-top: 50px;
+  margin-right: 40px; }
+  .part_item_logo img {
+    width: 300px; }
+
+.part_item_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start; }
+
+.part_item_title {
+  margin-top: 10px;
+  margin-bottom: 30px; }
+
+.part_item_text {
+  margin-bottom: 40px; }
+
+.part_item_but {
+  width: 200px;
+  height: 40px;
+  position: relative;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }

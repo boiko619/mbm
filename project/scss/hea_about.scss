@@ -2,26 +2,40 @@
     grid-area: hea_about;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
     height: 900px;
-    background: rgb(170, 170, 170);
-    
+    overflow: hidden;
+    width: 100% ;
+    position: relative;
+}
+
+.hea_about_block_absol{
+    position: absolute;
+    left: 50%;
+    margin-left: -300px;
+
 }
 .hea_about_block{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 600px;
+    z-index: 1200;
 }
 .hea_about_logo{
-    padding: 20% 0;
+    padding-top: 20%;
+    padding-bottom: 50px;
+    z-index: 1500;
     img{
-        height: 200px;
+        height: 400px;
         width: auto;
     }
 }
 .hea_about_title{
     text-align: center;
     padding-bottom: 4%;
+    z-index: 1500;
+
 }
 .hea_about_border{
     width: 70px;
@@ -32,6 +46,8 @@
 }
 .hea_about_info{
     margin-bottom: 30%;
+    z-index: 1500;
+
 }
 .hea_about_but{
     height: 50px;
@@ -42,3 +58,109 @@
     flex-direction: row;
     align-items: center;
 }
+.hexagon_flex_block{
+    display:flex;
+   flex-direction:row;
+   justify-content:flex-end;
+    align-items:center;
+    align-self: flex-end;
+    //margin-right: -375px;
+  
+  }
+  .hexagon_block{
+    display:flex;
+   flex-direction:column;
+   justify-content:center;
+   align-items: flex-end;
+   align-self: flex-end;
+   background-image: url("/images/bg_about_header.png");
+   background-position: center left;
+   background-size: cover;
+   // overflow: hidden;
+    //width: 800px;
+    //height: 420px;
+   // margin-top:-50px;
+  }
+  .hexagon_flex_block2{
+  position:relative;
+  right: -50px; 
+  }
+  .hexagon {
+      width: 100px;
+      height: 55px;
+      background: rgb(226, 226, 226); 
+      position: relative;
+    margin:0 5px;
+    margin-top: 30px;
+    margin-right:0;
+    
+    
+  }
+  
+  .hexagon:before {
+      content: "";
+      position: absolute;
+      top: -25px; 
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 25px solid  rgb(226, 226, 226); ;
+  }
+  .hexagon:after {
+      content: "";
+      position: absolute;
+      bottom: -25px; 
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-top: 25px solid  rgb(226, 226, 226); ;
+  }
+
+.hexagon1{
+    opacity: 0.2;
+}
+.hexagon2{
+    opacity: 0.23;
+}
+.hexagon3{
+    opacity: 0.34;
+}
+.hexagon4{
+    opacity: 0.4;
+}
+.hexagon5{
+    opacity: 0.54;
+}
+.hexagon6{
+    opacity: 0.59;
+}
+.hexagon7{
+    opacity: 0.69;
+}
+.hexagon7{
+    opacity: 0.79;
+}
+.hexagon8{
+    opacity: 0.83;
+}
+.hexagon9{
+    opacity: 0.88;
+
+}
+.hexagon10{
+    opacity: 0.92;
+    
+}
+.hexagon11{
+    opacity: 0.95;
+    
+}
+.hexagon11{
+    opacity: 1;
+    
+}
+

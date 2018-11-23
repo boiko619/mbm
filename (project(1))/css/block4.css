@@ -1,0 +1,116 @@
+.block4 {
+  grid-area: block4;
+  display: grid;
+  grid-template-areas: "block4_left block4_right";
+  grid-template-columns: 1fr 1fr;
+  background-image: url("/images/bg_block4.jpg");
+  background-position: center right;
+  background-size: cover; }
+
+.block4_left {
+  grid-area: block4_left;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative; }
+
+#block4_left {
+  left: -1110px;
+  transition: all 0.4s;
+  position: relative;
+  padding-left: 50px; }
+
+/*#block4_left{
+   
+    position: relative;
+
+}*/
+.block4_left {
+  width: 100%;
+  height: 663px;
+  background-color: rgba(114, 114, 114, 0.918);
+  position: relative; }
+
+.block4_left::after {
+  display: block;
+  content: "";
+  border-bottom: 663px solid rgba(114, 114, 114, 0.918);
+  border-right: 160px solid transparent;
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0px;
+  right: -160px;
+  margin-bottom: 0px; }
+
+.block4_tille {
+  padding-top: 100px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center; }
+  .block4_tille h2 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'Lora', serif; }
+
+.block4_info_ul {
+  margin-bottom: 60px;
+  border-left: 1px black solid;
+  position: relative; }
+
+.block4_info_li {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 25px;
+  position: relative;
+  left: -12px; }
+  .block4_info_li img {
+    margin-right: 10px; }
+  .block4_info_li p {
+    color: white;
+    font-size: 26px;
+    font-family: 'Source Sans Pro', sans-serif; }
+
+.block4_right {
+  grid-area: block4_right; }
+
+@media screen and (max-width: 850px) {
+  .block4_tille {
+    padding-top: 50px; } }
+
+@media screen and (max-width: 1200px) {
+  .block4 {
+    grid-template-columns: 4fr 2fr; } }
+
+@media screen and (max-width: 700px) {
+  .block4 {
+    grid-template-columns: 1fr;
+    grid-template-areas: "block4_left"; }
+  .block4_left::after {
+    display: none; }
+  .block4_right {
+    display: none; } }
+
+@media screen and (max-width: 500px) {
+  .block4_tille {
+    margin-bottom: 40px; }
+    .block4_tille h2 {
+      font-size: 28px; }
+    .block4_tille #block4_left {
+      padding-left: 10px; }
+  #block4_left {
+    padding-left: 10px; }
+  .block4_left {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative; }
+  .block4_info_li p {
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif; } }

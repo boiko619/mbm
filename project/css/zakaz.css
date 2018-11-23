@@ -8,7 +8,7 @@
 
 .block {
   display: grid;
-  grid-template-areas: "block_title block_title"  "block_left block_right";
+  grid-template-areas: "block_title block_title"  "block_left block_right";
   grid-template-columns: 300px 400px;
   grid-template-rows: 60px 300px;
   border-radius: 10px;
@@ -46,6 +46,6 @@
 
 @media screen and (max-width: 800px) {
   .block {
-    grid-template-areas: "block_title"  "block_left"  "block_right";
+    grid-template-areas: "block_title"  "block_left"  "block_right";
     grid-template-columns: 300px;
     grid-template-rows: 100px 150px 200px; } }

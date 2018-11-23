@@ -2,7 +2,7 @@
   position: relative;
   display: grid;
   overflow: hidden;
-  grid-template-areas: "nav nav nav"  "vac_block vac_block vac_block";
+  grid-template-areas: "nav nav nav"  "vac_block vac_block vac_block" "footer footer footer";
   grid-template-columns: minmax(10px, 1fr) minmax(10px, 1080px) minmax(10px, 1fr);
   -webkit-box-shadow: 0px 0px 54px 3px rgba(0, 0, 0, 0.56);
   -moz-box-shadow: 0px 0px 54px 3px rgba(0, 0, 0, 0.56); }
@@ -50,7 +50,7 @@
 
 .vac_item_block {
   display: grid;
-  grid-template-areas: "vac_item_title" "vac_item_center" "vac_item_button";
+  grid-template-areas: "vac_item_title" "vac_item_center" "vac_item_button";
   grid-template-rows: 2fr 5fr 3fr;
   grid-template-columns: 1fr;
   width: 100%;

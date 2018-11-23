@@ -1,0 +1,35 @@
+.nav {
+  grid-area: nav; }
+
+.nav_grid {
+  display: grid;
+  grid-template-areas: "logo head_menu";
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 70px; }
+
+.logo {
+  grid-area: logo;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .logo img {
+    height: 60px;
+    width: auto; }
+
+.head_menu {
+  grid-area: head_menu;
+  display: flex;
+  align-items: center; }
+
+.head_ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 100px; }
+
+.head_li {
+  margin-left: 30px; }
+  .head_li p {
+    font-size: 14px; }

@@ -2,13 +2,14 @@
   position: relative;
   display: grid;
   overflow: hidden;
-  grid-template-areas: "nav nav nav" "hea_about hea_about hea_about" "about_block about_block about_block";
+  grid-template-areas: "nav nav nav" "hea_about hea_about hea_about" "about_block about_block about_block" "footer footer footer";
   grid-template-columns: minmax(10px, 1fr) minmax(10px, 1080px) minmax(10px, 1fr);
   -webkit-box-shadow: 0px 0px 54px 3px rgba(0, 0, 0, 0.56);
   -moz-box-shadow: 0px 0px 54px 3px rgba(0, 0, 0, 0.56); }
 
 .nav {
-  grid-area: nav; }
+  grid-area: nav;
+  background: black; }
 
 .nav_grid {
   display: grid;
@@ -39,32 +40,97 @@
   margin-right: 100px; }
 
 .head_li {
-  margin-left: 30px; }
+  height: 40px;
+  width: 100px;
+  color: white;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .head_li a {
+    color: white;
+    width: 100px;
+    height: 40px;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
   .head_li p {
     font-size: 14px; }
+
+.head_li:hover {
+  background: white;
+  -o-transition: all 0.9s ease-in-out;
+  -moz-transition: all 0.9s ease-in-out;
+  -webkit-transition: all 0.9s ease-in-out;
+  transition: all 0.9s ease-in-out;
+  color: black; }
+  .head_li:hover a {
+    color: black;
+    width: 100px;
+    height: 40px; }
+  .head_li:hover p {
+    color: black; }
+
+.head_li:hover:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  top: -7px;
+  left: 100px;
+  background: white;
+  -webkit-transform: translateX(-100px);
+  -ms-transform: translateX(-100px);
+  transform: translateX(-100px); }
+
+.head_li:hover::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  bottom: -7px;
+  left: 0px;
+  background: white; }
 
 .hea_about {
   grid-area: hea_about;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end;
   height: 900px;
-  background: #aaaaaa; }
+  overflow: hidden;
+  width: 100%;
+  position: relative; }
+
+.hea_about_block_absol {
+  position: absolute;
+  left: 50%;
+  margin-left: -300px; }
 
 .hea_about_block {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  width: 600px;
+  z-index: 1200; }
 
 .hea_about_logo {
-  padding: 20% 0; }
+  padding-top: 20%;
+  padding-bottom: 50px;
+  z-index: 1500; }
   .hea_about_logo img {
-    height: 200px;
+    height: 400px;
     width: auto; }
 
 .hea_about_title {
   text-align: center;
-  padding-bottom: 4%; }
+  padding-bottom: 4%;
+  z-index: 1500; }
 
 .hea_about_border {
   width: 70px;
@@ -73,7 +139,8 @@
   margin-bottom: 10%; }
 
 .hea_about_info {
-  margin-bottom: 30%; }
+  margin-bottom: 30%;
+  z-index: 1500; }
 
 .hea_about_but {
   height: 50px;
@@ -84,10 +151,101 @@
   flex-direction: row;
   align-items: center; }
 
+.hexagon_flex_block {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  align-self: flex-end; }
+
+.hexagon_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  align-self: flex-end;
+  background-image: url("/images/bg_about_header.png");
+  background-position: center left;
+  background-size: cover; }
+
+.hexagon_flex_block2 {
+  position: relative;
+  right: -50px; }
+
+.hexagon {
+  width: 100px;
+  height: 55px;
+  background: #e2e2e2;
+  position: relative;
+  margin: 0 5px;
+  margin-top: 30px;
+  margin-right: 0; }
+
+.hexagon:before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 25px solid #e2e2e2; }
+
+.hexagon:after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 25px solid #e2e2e2; }
+
+.hexagon1 {
+  opacity: 0.2; }
+
+.hexagon2 {
+  opacity: 0.23; }
+
+.hexagon3 {
+  opacity: 0.34; }
+
+.hexagon4 {
+  opacity: 0.4; }
+
+.hexagon5 {
+  opacity: 0.54; }
+
+.hexagon6 {
+  opacity: 0.59; }
+
+.hexagon7 {
+  opacity: 0.69; }
+
+.hexagon7 {
+  opacity: 0.79; }
+
+.hexagon8 {
+  opacity: 0.83; }
+
+.hexagon9 {
+  opacity: 0.88; }
+
+.hexagon10 {
+  opacity: 0.92; }
+
+.hexagon11 {
+  opacity: 0.95; }
+
+.hexagon11 {
+  opacity: 1; }
+
 .about_block {
   grid-area: about_block;
   display: grid;
-  grid-template-areas: "about_title" "about_block1" "about_ul1" "about_block2" "about_ul2";
+  grid-template-areas: "about_title" "about_block1" "about_ul1" "about_block2" "about_ul2";
   padding: 0 20%; }
 
 .about_title {
